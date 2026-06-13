@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Canvas | Computer Vision Project</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">🎨 Air Canvas</div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#workflow">Workflow</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <span class="tag">Computer Vision Project</span>
+
+            <h1>
+                Turn Your Screen Into A Canvas
+                And Your Fingers Into A Brush
+            </h1>
+
+            <p>
+                Air Canvas is an AI-powered virtual drawing system that uses
+                hand gestures and computer vision to create an interactive,
+                touchless drawing experience.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#" class="btn primary">View Demo</a>
+                <a href="#" class="btn secondary">GitHub</a>
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+
+            <div class="floating-card">
+                <i class="fa-solid fa-hand"></i>
+                <h3>Gesture Control</h3>
+            </div>
+
+            <div class="floating-card">
+                <i class="fa-solid fa-paintbrush"></i>
+                <h3>Virtual Drawing</h3>
+            </div>
+
+            <div class="floating-card">
+                <i class="fa-solid fa-camera"></i>
+                <h3>Real-Time Tracking</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Scrolling text -->
+     <section class="scroll-text">
+        <h1>EXPLORE</h1>
+     </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+
+        <div class="section-title">
+            <h2>About The Project</h2>
+        </div>
+
+        <div class="about-container">
+
+            <div class="about-text">
+
+                <h3>Project Overview</h3>
+
+                <p>
+                    Air Canvas is a Computer Vision application that enables
+                    users to draw, erase, and interact with a virtual canvas
+                    using only hand gestures captured through a webcam.
+                </p>
+
+                <p>
+                    The project uses OpenCV and MediaPipe to detect hand
+                    landmarks in real-time and convert gestures into drawing
+                    actions.
+                </p>
+
+            </div>
+
+            <div class="about-stats">
+
+                <div class="stat-card">
+                    <h3>21</h3>
+                    <p>Hand Landmarks</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>95%</h3>
+                    <p>Accuracy</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>30+</h3>
+                    <p>FPS Tracking</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Real-Time</h3>
+                    <p>Performance</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features" id="features">
+
+        <div class="section-title">
+            <h2>Key Features</h2>
+        </div>
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+                <i class="fa-solid fa-pen"></i>
+                <h3>Finger Drawing</h3>
+                <p>Draw naturally using your index finger.</p>
+            </div>
+
+            <div class="feature-card">
+                <i class="fa-solid fa-hand"></i>
+                <h3>Gesture Recognition</h3>
+                <p>Detects hand landmarks with high accuracy.</p>
+            </div>
+
+            <div class="feature-card">
+                <i class="fa-solid fa-eraser"></i>
+                <h3>Smart Eraser</h3>
+                <p>Erase drawings using open palm gestures.</p>
+            </div>
+
+            <div class="feature-card">
+                <i class="fa-solid fa-video"></i>
+                <h3>Webcam Tracking</h3>
+                <p>Uses a standard webcam for input.</p>
+            </div>
+
+            <div class="feature-card">
+                <i class="fa-solid fa-bolt"></i>
+                <h3>Low Latency</h3>
+                <p>Smooth and responsive interaction.</p>
+            </div>
+
+            <div class="feature-card">
+                <i class="fa-solid fa-brain"></i>
+                <h3>AI Tracking</h3>
+                <p>Powered by MediaPipe hand detection.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- TECH STACK -->
+    <section class="tech-stack">
+
+        <div class="section-title">
+            <h2>Technology Stack</h2>
+        </div>
+
+        <div class="tech-container">
+            <div class="tech-item">Python</div>
+            <div class="tech-item">OpenCV</div>
+            <div class="tech-item">MediaPipe</div>
+            <div class="tech-item">NumPy</div>
+            <div class="tech-item">PyAutoGUI</div>
+            <div class="tech-item">Computer Vision</div>
+        </div>
+
+    </section>
+
+    <!-- WORKFLOW -->
+    <section class="workflow" id="workflow">
+
+        <div class="section-title">
+            <h2>How It Works</h2>
+        </div>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <h3>1. Webcam Capture</h3>
+                <p>Capture real-time video frames.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>2. Hand Detection</h3>
+                <p>MediaPipe identifies hand landmarks.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>3. Gesture Analysis</h3>
+                <p>Recognize user gestures.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>4. Drawing Commands</h3>
+                <p>Convert gestures into actions.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>5. Canvas Rendering</h3>
+                <p>Display drawings in real-time.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FUTURE -->
+    <section class="future">
+
+        <div class="section-title">
+            <h2>Future Enhancements</h2>
+        </div>
+
+        <div class="future-grid">
+            <div class="future-card">🎨 Multiple Colors</div>
+            <div class="future-card">📏 Brush Size Control</div>
+            <div class="future-card">💾 Save Drawings</div>
+            <div class="future-card">🎤 Voice Commands</div>
+            <div class="future-card">☁ Cloud Storage</div>
+            <div class="future-card">🤖 AI Sketch Recognition</div>
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+
+        <div class="section-title">
+            <h2>Developer</h2>
+        </div>
+
+        <h3>Harsh Choudhury</h3>
+        <p>B.Tech CSE (AIML)</p>
+
+        <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p> placeholder</p>
+    </footer>
+
+    <!-- LOAD JS AFTER PAGE -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js" defer></script>
+
+</body>
+</html>
