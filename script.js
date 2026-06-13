@@ -8,7 +8,7 @@
 // -------------------------------------
 
 const revealElements = document.querySelectorAll(
-  ".feature-card, .stat-card, .timeline-item, .future-card, .tech-item, .floating-card"
+  ".feature-card, .stat-card, .timeline-item, .future-card, .tech-item, .floating-card",
 );
 
 function revealOnScroll() {
@@ -36,11 +36,11 @@ const navbar = document.querySelector(".navbar");
 if (navbar) {
   window.addEventListener("scroll", () => {
     if (window.scrollY > 100) {
-      navbar.style.background = "rgba(64, 64, 192, 0.9)";
+      navbar.style.background = "rgba(64, 64, 192, 0.4)";
       navbar.style.backdropFilter = "blur(20px)";
       navbar.style.boxShadow = "0 5px 20px rgba(75, 75, 75, 0.3)";
     } else {
-      navbar.style.background = "#323232";
+      navbar.style.background = "#32323281";
       navbar.style.boxShadow = "none";
     }
   });
@@ -128,9 +128,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
 
-    const target = document.querySelector(
-      this.getAttribute("href")
-    );
+    const target = document.querySelector(this.getAttribute("href"));
 
     if (target) {
       target.scrollIntoView({
@@ -200,8 +198,7 @@ const featureCards = document.querySelectorAll(".feature-card");
 
 featureCards.forEach((card) => {
   card.addEventListener("mouseenter", () => {
-    card.style.boxShadow =
-      "0 0 25px rgba(99,102,241,0.5)";
+    card.style.boxShadow = "0 0 25px rgba(99,102,241,0.5)";
   });
 
   card.addEventListener("mouseleave", () => {
@@ -216,8 +213,7 @@ featureCards.forEach((card) => {
 const footer = document.querySelector("footer");
 
 if (footer) {
-  footer.innerHTML =
-    `© ${new Date().getFullYear()} Air Canvas Project | All Rights Reserved.`;
+  footer.innerHTML = `© ${new Date().getFullYear()} Air Canvas Project | All Rights Reserved.`;
 }
 
 // -------------------------------------
@@ -230,20 +226,30 @@ window.addEventListener("load", () => {
   console.log("🎨 Air Canvas Portfolio Loaded Successfully");
 });
 
-
-
 // scrolltrigger
 
-gsap.to(".scroll-text h1",{
-    transform: "translateX(-65%)",
-    scrollTrigger:{
-        trigger: ".scroll-text",
-        scroller: "body",
-        markers:true,
-        start:"top 20%",
-        scrub:2,
-        pin:true,
-        end: "top -60%",
+gsap.to(".scroll-text h1", {
+  transform: "translateX(-65%)",
+  scrollTrigger: {
+    trigger: ".scroll-text",
+    scroller: "body",
+    start: "top 20%",
+    scrub: 2,
+    pin: true,
+    end: "top -60%",
+  },
+});
 
-    }
+
+// cursor
+var cursor = document.getElementById("cursor")
+
+var main = document.getElementById("main")
+
+main.addEventListener("mousemove",function(dets){
+  gsap.to(cursor,{
+    x:dets.x,
+    y:dets.y,
+    
+  })
 })
